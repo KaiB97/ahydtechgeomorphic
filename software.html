@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+        <title>AHYDTECH GEOMORPHIC LTD. Website Design</title>
+        <link rel="stylesheet" href="softwarestyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <section class="header"> 
+            <nav>
+                <a href="software.html"><img src="images/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="services.html">SERVICES</a></li>
+                        <li> <a href="projects.html">PROJECT EXPERIENCE</a></li>
+                        <li> <a href="software.html">SOFTWARE</a></li>
+                        <li> <a href="list.html">PROJECT LIST</a></li>
+                        <li> <a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"onclick="showMenu()"></i>
+            </nav>
+        
+            <div class="text-box">
+                <h1> AHYDTECH GEOMORPHIC LTD.</h1>
+                <p> Advanced Hydrology Hydraulic Geomorphology. <br> Innovative water resources management.</p> <br>
+                <a href="contact.html" class="hero-btn"> Contact Us to Learn More</a>
+            </div>
+        </section>
+
+<!--------Software----------->
+<section class="services">
+<div class="row">
+<div class="software-col">
+    <h1>Software</h1>
+    <p> AHYDTECH has extensive experience in using following Hydrologic, hydraulic, Hydrodynamic, 
+        Sediment Transport & <br>Water Quality Modeling Software for Coastal Engineering, River Morphology, 
+        Watershed Management & Floodplain Mapping:
+    </p>
+
+    <ul>
+        <li>Hydrologic Model (WMS, GMS, PCSWMM, SWMM, HSP-F, GAWSER, HEC-HMS, MIKE SHE, MIKE 11 NAM, VO2) </li>
+        <li>1D Hydraulic Model (1D-2D PCSWMM/SWMM5, SWMM, HEC-RAS, MIKE 11) </li>
+        <li>2D Hydraulic Model (SRH-2D, RMA2, FESWMS, TUFLOW, STWAVE, ADCIRC, MIKE 21, HEC-RAS) </li>
+        <li>2D/3D Hydrodynamic, Sediment Transport, River Morphology & Water Quality Model (RMA2, SED2D, RMA4, FESWMS, TUFLOW, ADCIRC, Delft3D, MIKE ECO Lab) </li>  
+    </ul>
+</div>
+
+<div class="software-col">
+    <img class="software-img" src="images/software1.png">
+
+</div>
+
+</div>
+
+   <br>
+
+  
+
+
+</section>
+
+
+    
+
+
+    <!-----------footer------------->
+    <section class="footer">
+        <br>
+        <h4> <i class="fa fa-copyright" aria-hidden="true"></i> Ahydtech Geomorphic LTD. </h4>
+        <p> Contact Us </p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/company/ahydtechbd/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=bd" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="mailto:info@ahydtech.ca" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+            <a href="tel:1519-400-0264" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
+            <a href="https://www.facebook.com/ahydtechgeomorphic/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        
+        <br>
+        <p2> Made by <a href="mailto:kaiabahar97@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>Kaia Bahar. </p2>
+    </div>
+    </section>
+
+
+
+
+<!--------JavaScript for Toggle Menu----------->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<script>
+
+    const accordion = document.getElementsByClassName('contentBx');
+
+    for (i = 0; i<accordion.length; i++ ){
+        accordion[i].addEventListener('click', function() {
+            this.classList.toggle('active')
+        })
+    }
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<script src="js/jQuery.js"></script>
+
+<script>
+    jQuery(document).ready(function($){
+
+        $('.slider-img').on('click', function(){
+            $('.slider-img').removeClass('active');
+            $(this).addClass('active');
+        })
+    });
+</script>
+
+</body>
+
+</html>
+
